@@ -2,17 +2,16 @@
 	<a href="?pagina=new_game">Inserir novo Jogo</a>
 	<table class="jogo" >
 		<tr>
-			<th>Id</th>
+		
 			<th>Nome do jogo</th>
 			<th>Tipo do jogo</th>
-			<th>Deletar</th>
 			<th>Editar</th>
+			<th>Deletar</th>
 		</tr>
 
 	<?php 
 	 while ($dado = $con->fetch_array()){ ?>
 		
-			<td><?php echo $dado['ID'] ?></td>
 			<td><?php echo $dado['NOME'] ?></td>
 			<td><?php echo $dado['TIPO'] ?></td>
 
