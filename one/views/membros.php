@@ -19,9 +19,9 @@
 			<td><?php echo $dado_m['ID_JOGO'] ?></td>
 
 
-			<td><a href="?pagina=new_people&editar=<?php echo $dado_m['ID']; ?>">Editar</a></td>
+			<td><a href="?pagina=new_people&editar=<?php echo $dado_m['ID']; ?>"><img src="img/lapis.png" class="lapis"></a></td>
 
-			<td><a href="d_membros.php?ID=<?php echo $dado_m['ID']; ?>">Deletar</a></td></tr>
+			<td><a href="d_membros.php?ID=<?php echo $dado_m['ID']; ?>"><img src="img/lixeira.png" class="lixeiras"></a></a></td></tr>
 
 <?php } ?>
 	</table>

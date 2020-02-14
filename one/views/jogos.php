@@ -16,9 +16,9 @@
 			<td><?php echo $dado['TIPO'] ?></td>
 
 			
-			<td><a href="?pagina=new_game&editar=<?php echo $dado['ID']; ?>">Editar</a></td>
+			<td><a href="?pagina=new_game&editar=<?php echo $dado['ID']; ?>"><img src="img/lapis.png" class="lapis"></a></td>
 
-			<td><a href="d_jogos.php?ID=<?php echo $dado['ID']; ?>">Deletar</a></td></tr>
+			<td><a href="d_jogos.php?ID=<?php echo $dado['ID']; ?>"><img src="img/lixeira.png" class="lixeira"></a></td></tr>
 
 
 <?php } ?>
