@@ -1,6 +1,5 @@
 <?php
 session_start();
-//unset
 session_destroy();
-header('Location: index.php');
+header('Location: homelogin.php');
 exit();

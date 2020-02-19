@@ -2,9 +2,8 @@
 session_start();
 include('conexao.php');
 
-
 if(empty($_POST['usuario']) || empty($_POST['senha'])) {
-	header('Location: indexl.php');
+	header('Location: homelogin.php');
 	exit();
 }
 
@@ -13,17 +12,16 @@ $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
 
 $query = "select usuario from usuario where usuario = '{$usuario}' and senha = md5('{$senha}')";
 
-
 $result = mysqli_query($conexao, $query);
 
 $row = mysqli_num_rows($result);
 
 if($row == 1) {
 	$_SESSION['usuario'] = $usuario;
-	header('Location: header.php');
+	header('Location: /');
 	exit();
 } else {
 	$_SESSION['nao_autenticado'] = true;
-	header('Location: indexl.php');
+	header('Location: homelogin.php');
 	exit();
 }
