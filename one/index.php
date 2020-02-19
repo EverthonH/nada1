@@ -8,7 +8,7 @@ include 'bd.php';
 include 'header.php';
 session_start();
 
-// include'login/index.php';
+#verificacao do login
 if (!isset($_SESSION['usuario'])) {
 	header('location: login/homelogin.php');
 	exit();
@@ -33,7 +33,6 @@ switch($pagina){
 }
 
 
-#rodapé
 include 'footer.php';
 
 
